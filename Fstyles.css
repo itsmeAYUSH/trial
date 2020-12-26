@@ -214,7 +214,6 @@ margin-bottom: 100px;
 }
 .containerC{
   text-align: center;
-  background: #7510F7;
   background :#70af85;
   color:white;
   border-radius: 50px;
@@ -261,9 +260,7 @@ margin-bottom: 100px;
   border-radius: 10px;
 }
 .containerD{
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  text-align:center;
 }
 
 
