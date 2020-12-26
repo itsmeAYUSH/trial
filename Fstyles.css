@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Raleway&display=swap');
+
+
+
+
+
+
+h1{
+  font-weight: bold;
+  font-family: 'Bad Script', cursive;
+  color: #fcf8e8;
+}
+h2{
+font-family: 'Raleway', sans-serif;
+color:#433d3c;
+}
+p{
+  font-size: 20px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: ;
+}
+
+nav{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: #ecb390;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fcf8e8;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111d5e;
+  background: #d4e2d4;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+#loading{
+  height: 100%;
+  width:100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color:black;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fed;
+  border-color: #fed transparent #fed transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+
+.slantedDivA{
+      position:;
+      width: 100%;
+      height: auto;
+      background:#df7861;;
+      box-sizing: border-box;
+      padding: 30px;
+      color: white;
+      margin-bottom:200px;
+}
+
+.slantedDivA:after{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      z-index:-1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: top left;
+      transform: skewY(4deg);
+}
+
+.containerA{
+margin-top: 150px;
+margin-left: 150px;
+margin-bottom: 100px;
+}
+.containerA img{
+  float: right;
+  display:;
+  position:;
+}
+h1{
+  font-size: 70px;
+}
+.containerB{
+  margin: 0px 0px 100px 100px;
+}
+
+.containerC{
+  text-align: center;
+  background-color: #7510F7;
+  color:white;
+  height: 500;
+}
+.containerC img {
+  background-color: white;
+  width:100%;
+}
+.containerC p{
+  padding: 80px 200px 100px 200px;
+}
+.containerC h2{
+  padding-top: 40px;
+  color:#fcf8e8;
+}
+
+
+.BOXES{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1,.box2,.box3{
+  height:400px;
+  width:320px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+  background-color: white;
+  border-radius:20px;
+}
+
+.BOXES p{
+}
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
