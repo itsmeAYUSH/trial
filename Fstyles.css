@@ -4,19 +4,6 @@
 
 
 
-
-h1{
-  font-weight: bold;
-  font-family: 'Bad Script', cursive;
-  color: #fcf8e8;
-}
-h2{
-font-family: 'Raleway', sans-serif;
-color:#433d3c;
-}
-p{
-  font-size: 20px;
-}
 *{
   padding: 0;
   margin: 0;
@@ -24,10 +11,27 @@ p{
   list-style: none;
   box-sizing: border-box;
 }
+h1{
+  font-weight: bold;
+  font-family: 'Bad Script', cursive;
+  color: #fcf8e8;
+  font-size:70px;
+
+}
+h2{
+font-family: 'Raleway', sans-serif;
+color:#433d3c;
+font-size: 30px;
+}
+h3{
+  font-size: 22px;
+}
+p{
+  font-size: 21px;
+}
 body{
   font-family: ;
 }
-
 nav{
   display: flex;
   height: 100px;
@@ -37,7 +41,6 @@ nav{
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
-  position: fixed;
 }
 nav.logo{
   font-size: 35px;
@@ -174,7 +177,7 @@ input[type="checkbox"]{
       box-sizing: border-box;
       padding: 30px;
       color: white;
-      margin-bottom:200px;
+      margin-bottom:170px;
 }
 
 .slantedDivA:after{
@@ -199,28 +202,29 @@ margin-bottom: 100px;
 }
 .containerA img{
   float: right;
-  display:;
-  position:;
-}
-h1{
-  font-size: 70px;
-}
-.containerB{
-  margin: 0px 0px 100px 100px;
 }
 
+.containerB{
+  margin: 0px 0px 100px 100px;
+  margin-right: 550px;
+}
+.containerB h2{
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
 .containerC{
   text-align: center;
-  background-color: #7510F7;
+  background: #7510F7;
+  background :#70af85;
   color:white;
-  height: 500;
+  border-radius: 50px;
 }
 .containerC img {
   background-color: white;
   width:100%;
 }
 .containerC p{
-  padding: 80px 200px 100px 200px;
+  padding: 50px 200px 100px 200px;
 }
 .containerC h2{
   padding-top: 40px;
@@ -230,20 +234,36 @@ h1{
 
 .BOXES{
   display: flex;
-  justify-content: space-between;
+  top:-60px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+  position: relative;
 }
 
 .box1,.box2,.box3{
-  height:400px;
-  width:320px;
+  height:300px;
+  width:auto;
   background-repeat: no-repeat;
   background-size:cover;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
   background-color: white;
   border-radius:20px;
+  margin: 0px 50px 0px 50px;
 }
 
 .BOXES p{
+  margin: 30px 20px 10px 20px;
+}
+.BOXES H3{
+  margin-top: 10px;
+  background: #c6ebc9;
+  border-radius: 10px;
+}
+.containerD{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 
