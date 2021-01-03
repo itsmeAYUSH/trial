@@ -14,10 +14,10 @@
 h1{
   font-weight: bold;
   font-family: 'Bad Script', cursive;
-  color: #fcf8e8;
+  color: #222831;
   font-size:70px;
-
 }
+
 h2{
 font-family: 'Raleway', sans-serif;
 color:#433d3c;
@@ -36,7 +36,7 @@ nav{
   display: flex;
   height: 100px;
   width: 100%;
-  background: #ecb390;
+  background: #2f3847;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -55,12 +55,12 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: #fcf8e8;
+  color: #eeeeee;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
@@ -173,7 +173,7 @@ input[type="checkbox"]{
       position:;
       width: 100%;
       height: auto;
-      background:#df7861;;
+      background-image: linear-gradient(to right,  #fdb827, #e7a117 );
       box-sizing: border-box;
       padding: 30px;
       color: white;
@@ -195,6 +195,7 @@ input[type="checkbox"]{
       transform: skewY(4deg);
 }
 
+
 .containerA{
 margin-top: 150px;
 margin-left: 150px;
@@ -203,19 +204,40 @@ margin-bottom: 100px;
 .containerA img{
   float: right;
 }
+@media (max-width:1000px) {
+  .containerA{
+    margin-left: 15px;
+    margin-top: 40px;
+  }
+  .containerA h1{
+    font-size: 60px;
+}
+  .containerA h2{
+    font-size: 30px;
+  }
+  .containerA img{
+    height: 300px;
+  }
+}
+
 
 .containerB{
-  margin: 0px 0px 100px 100px;
+  margin: 100px 0px 100px 100px;
   margin-right: 550px;
 }
 .containerB h2{
   margin-left: 30px;
   margin-bottom: 10px;
 }
+@media (max-width:850px){
+  .containerB{
+  margin: 50px 50px 50px 50px;
+  }
+}
 .containerC{
   text-align: center;
-  background :#70af85;
-  color:white;
+  background :#ffc85c;
+  color:#30475e;
   border-radius: 50px;
 }
 .containerC img {
@@ -227,7 +249,12 @@ margin-bottom: 100px;
 }
 .containerC h2{
   padding-top: 40px;
-  color:#fcf8e8;
+  color:#222831;
+}
+@media (max-width:800px) {
+  .containerC p {
+    padding: 30px 50px 90px 50px;
+  }
 }
 
 
@@ -240,29 +267,85 @@ margin-bottom: 100px;
   position: relative;
 }
 
-.box1,.box2,.box3{
-  height:300px;
+.box{
+  height: auto;
   width:auto;
   background-repeat: no-repeat;
   background-size:cover;
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+  box-shadow: 15px 5px 20px 10px rgba(1,0,0,0.3);
   background-color: white;
   border-radius:20px;
   margin: 0px 50px 0px 50px;
 }
+.box img{
+  margin-top: 20px;
+}
 
 .BOXES p{
-  margin: 30px 20px 10px 20px;
+  margin: 20px 20px 10px 20px;
 }
 .BOXES H3{
   margin-top: 10px;
-  background: #c6ebc9;
+  background: #f6d887;
   border-radius: 10px;
+}
+@media (max-width: 1200px){
+
+  .BOXES{
+    display: grid;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  .box{
+    margin:0px 0px 0px 0px;
+  }
 }
 .containerD{
   text-align:center;
+  background-color: #ffc85c;
+  height: 150px;
+  padding: 50px 50px 50px 50px;
+  letter-spacing: 10px;
+}
+@media (max-width:1000px) {
+  .containerD h2{
+    font-size: 20px;
+    letter-spacing: 5px;
+
+
+  }
+
+}
+.containerE{
+  padding:40px 0px 40px 0px;
+  background:#fff8c1;
+  line-height: 70px;
+}
+.containerE a{
+  color: black;
 }
 
+.containerF{
+  text-align:center;
+  background:#222831;
+  color:WHITE;
+  height: 100px;
+  padding:37px;
+}
+.contactbutton{
+    background:    #ffc85c;
+    border-radius: 1000px;
+    padding:       20px 45px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal  26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+}
+.contactbutton:hover{
+  background-color:#ffb26b;
+  cursor: pointer;
+}
 
 
 #myBtn {
@@ -279,7 +362,27 @@ margin-bottom: 100px;
   padding: 15px;
   border-radius: 25px;
 }
-
 #myBtn:hover {
   background-color: #555;
+}
+
+.wave {
+    position: ;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: #ffc85c;
 }
